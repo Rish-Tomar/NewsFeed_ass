@@ -1,10 +1,5 @@
-// A mock function to mimic making an async request for data
-export function fetchCount(amount = 1) {
-    return new Promise((resolve) =>
-      setTimeout(() => resolve({ data: amount }), 500)
-    );
-  }
-  
+
+// functions handles request to fetch top headline in Country=INDIA 
 export function fetchNews(){
   return new Promise(async(resolve)=>{
 const response = await fetch('https://newsapi.org/v2/top-headlines?country=in',{

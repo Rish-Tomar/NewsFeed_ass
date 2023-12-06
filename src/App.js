@@ -6,6 +6,7 @@ import {RouterProvider, createBrowserRouter}  from 'react-router-dom'
 import HomePage from './pages/HomePage';
 import NewsFeed from './pages/NewsFeed';
 
+// Routes for the application
 const router =createBrowserRouter([
   {
     path:"/",
@@ -17,8 +18,8 @@ const router =createBrowserRouter([
   }
 ])
 
+// Entry Point Of application
 function App() {
-
   return (
     <div>
      {<RouterProvider router={router}/>}

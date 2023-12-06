@@ -11,19 +11,20 @@ function HomePage() {
     
     <div>
         <NavBar/>
+        {/* if login is true then Login Component will be rendered else Signup will be rendered */}
         {login?
                 <>
-                <Login/>
+                <Login/> {/* Login component */}
                 <Typography textAlign="center">
                     Not a Member ? <Button onClick={()=>setLogin(false)}>SignUp</Button></Typography>
                 </>
             :
                 <>
-                <SignUp/>
+                <SignUp/> {/* Signup component */}
                 <Typography textAlign="center">
                     already a Member ? <Button onClick={()=>setLogin(true)}>Login</Button></Typography>
                 </>
-            }
+        }
     </div>
   )
 }

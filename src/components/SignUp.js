@@ -7,7 +7,7 @@ import {auth,
 import { useDispatch } from 'react-redux'
 import { login } from '../features/user/userSlice'
 
-
+// customised MaterialUI Box Component
 const FlexBetweenBox =styled(Box)({
     display:'flex',
     flexDirection:"column",
@@ -17,6 +17,7 @@ const FlexBetweenBox =styled(Box)({
     gap:"1rem"
 })
 
+// entrypoint to SignUp.js
 function SignUp() {
     const [email,setEmail]=useState("")
     const [password,setPassword]=useState("")
@@ -37,6 +38,7 @@ function SignUp() {
         setPassword(e.target.value)
     }
 
+     // function handling firebase new user creation and dispatching action to store logged in user 
     const signUpHandler =(e)=>{
         console.log(email,password)
         e.preventDefault()

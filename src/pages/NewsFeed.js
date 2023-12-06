@@ -16,10 +16,8 @@ function NewsFeed() {
     
   return (
     <>
-        {/* {user&& */}
         <NavBar/>
         {!loading&&<DisplayNews/>}
-        {/* } */}
     </>
   )
 }
