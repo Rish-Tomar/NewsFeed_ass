@@ -16,5 +16,5 @@ You may also see any lint errors in the console.
 
 ## use existing user for login
 
- email:abc@def
+ email:abc@def\
  password:abcdef
